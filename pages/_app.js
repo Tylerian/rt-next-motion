@@ -10,7 +10,7 @@ class MyApp extends App {
 
     return (
       <Layout>
-        <AnimatePresence exitBeforeEnter>
+        <AnimatePresence exitBeforeEnter={false}>
           <Component {...pageProps} key={router.route} />
         </AnimatePresence>
       </Layout>
